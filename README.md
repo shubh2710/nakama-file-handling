@@ -43,18 +43,24 @@ The primary RPC function provided by this module is `my_rpc_function`. This func
     "type": "core",
     "version": "1.0.0"
 }
-
+```
+### Test via UI
 To test the RCP function goto ui > localhost:7351 -> RUNTIME MODULES -> Registered RPC Functions -> select my_rpc_function -> click on API EXPLORE
 
 ### API Explorer
 
 select `my_rpc_function` click on `send request`
 
+### Run Unit Test
+    ```sh
+    go test
+    
+    ```
 
-Thoughts on the Task
+### Thoughts on the Task
 This task provides a solid example of integrating custom server logic with Nakama using Go. It demonstrates how to handle file operations, database interactions, and RPC calls, which are common requirements in game server development. The use of Docker Compose simplifies the deployment process, making it easier to set up and run the Nakama server with the custom module.
 
-Ideas for Improvement
+### Ideas for Improvement
 If I had more time, I would consider the following improvements:
 
 Enhanced Error Handling: Improve error messages and add more granular error handling to cover edge cases.
